@@ -44,7 +44,7 @@ THE SOFTWARE.
 			[self setHasShadow:NO];
 		}
 
-		[self setAcceptsMouseMovedEvents:NO];
+		[self setAcceptsMouseMovedEvents:YES];
 		[self setOpaque:YES];
 	}
 	return self;

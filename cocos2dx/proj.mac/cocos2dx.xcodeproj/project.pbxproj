@@ -306,6 +306,13 @@
 		469A7DFA16C247C8006FFCB2 /* tinyxml2.h in Headers */ = {isa = PBXBuildFile; fileRef = 469A7DF816C247C8006FFCB2 /* tinyxml2.h */; };
 		46A3939A16E03F4D00210B16 /* ccFPSImages.c in Sources */ = {isa = PBXBuildFile; fileRef = 46A3939816E03F4D00210B16 /* ccFPSImages.c */; };
 		46A3939B16E03F4D00210B16 /* ccFPSImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A3939916E03F4D00210B16 /* ccFPSImages.h */; };
+		546BE7551ACDD96D00ED87FF /* CCKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546BE74E1ACDD96D00ED87FF /* CCKeyboard.cpp */; };
+		546BE7561ACDD96D00ED87FF /* CCKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 546BE74F1ACDD96D00ED87FF /* CCKeyboard.h */; };
+		546BE7571ACDD96D00ED87FF /* CCKeyboardDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 546BE7501ACDD96D00ED87FF /* CCKeyboardDelegate.h */; };
+		546BE7581ACDD96D00ED87FF /* CCKeyboardDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546BE7511ACDD96D00ED87FF /* CCKeyboardDispatcher.cpp */; };
+		546BE7591ACDD96D00ED87FF /* CCKeyboardDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 546BE7521ACDD96D00ED87FF /* CCKeyboardDispatcher.h */; };
+		546BE75A1ACDD96D00ED87FF /* CCKeyboardHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546BE7531ACDD96D00ED87FF /* CCKeyboardHandler.cpp */; };
+		546BE75B1ACDD96D00ED87FF /* CCKeyboardHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 546BE7541ACDD96D00ED87FF /* CCKeyboardHandler.h */; };
 		F4D7A74715F269D10081CE26 /* ccTypeInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D7A74615F269D10081CE26 /* ccTypeInfo.h */; };
 /* End PBXBuildFile section */
 
@@ -613,6 +620,13 @@
 		469A7DF816C247C8006FFCB2 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
 		46A3939816E03F4D00210B16 /* ccFPSImages.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ccFPSImages.c; sourceTree = "<group>"; };
 		46A3939916E03F4D00210B16 /* ccFPSImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccFPSImages.h; sourceTree = "<group>"; };
+		546BE74E1ACDD96D00ED87FF /* CCKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCKeyboard.cpp; sourceTree = "<group>"; };
+		546BE74F1ACDD96D00ED87FF /* CCKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKeyboard.h; sourceTree = "<group>"; };
+		546BE7501ACDD96D00ED87FF /* CCKeyboardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKeyboardDelegate.h; sourceTree = "<group>"; };
+		546BE7511ACDD96D00ED87FF /* CCKeyboardDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCKeyboardDispatcher.cpp; sourceTree = "<group>"; };
+		546BE7521ACDD96D00ED87FF /* CCKeyboardDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKeyboardDispatcher.h; sourceTree = "<group>"; };
+		546BE7531ACDD96D00ED87FF /* CCKeyboardHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCKeyboardHandler.cpp; sourceTree = "<group>"; };
+		546BE7541ACDD96D00ED87FF /* CCKeyboardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKeyboardHandler.h; sourceTree = "<group>"; };
 		F4D7A74615F269D10081CE26 /* ccTypeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypeInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -670,6 +684,7 @@
 		1551A353158F2ADE00E66CFE /* cocos2dx */ = {
 			isa = PBXGroup;
 			children = (
+				546BE74D1ACDD96D00ED87FF /* keyboard_dispatcher */,
 				46A3939816E03F4D00210B16 /* ccFPSImages.c */,
 				46A3939916E03F4D00210B16 /* ccFPSImages.h */,
 				1551A375158F2ADE00E66CFE /* CCCamera.cpp */,
@@ -1268,6 +1283,20 @@
 			path = tinyxml2;
 			sourceTree = "<group>";
 		};
+		546BE74D1ACDD96D00ED87FF /* keyboard_dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				546BE74E1ACDD96D00ED87FF /* CCKeyboard.cpp */,
+				546BE74F1ACDD96D00ED87FF /* CCKeyboard.h */,
+				546BE7501ACDD96D00ED87FF /* CCKeyboardDelegate.h */,
+				546BE7511ACDD96D00ED87FF /* CCKeyboardDispatcher.cpp */,
+				546BE7521ACDD96D00ED87FF /* CCKeyboardDispatcher.h */,
+				546BE7531ACDD96D00ED87FF /* CCKeyboardHandler.cpp */,
+				546BE7541ACDD96D00ED87FF /* CCKeyboardHandler.h */,
+			);
+			path = keyboard_dispatcher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1318,6 +1347,8 @@
 				1551A6BA158F2ADE00E66CFE /* matrix.h in Headers */,
 				1551A6BB158F2ADE00E66CFE /* kazmath.h in Headers */,
 				1551A6BC158F2ADE00E66CFE /* mat3.h in Headers */,
+				546BE7561ACDD96D00ED87FF /* CCKeyboard.h in Headers */,
+				546BE7571ACDD96D00ED87FF /* CCKeyboardDelegate.h in Headers */,
 				1551A6BD158F2ADE00E66CFE /* mat4.h in Headers */,
 				1551A6BE158F2ADE00E66CFE /* neon_matrix_impl.h in Headers */,
 				1551A6BF158F2ADE00E66CFE /* plane.h in Headers */,
@@ -1339,6 +1370,7 @@
 				1551A6E6158F2ADE00E66CFE /* CCTransitionProgress.h in Headers */,
 				1551A6E8158F2ADE00E66CFE /* CCMenu.h in Headers */,
 				1551A6EA158F2ADE00E66CFE /* CCMenuItem.h in Headers */,
+				546BE7591ACDD96D00ED87FF /* CCKeyboardDispatcher.h in Headers */,
 				1551A6EC158F2ADE00E66CFE /* CCMotionStreak.h in Headers */,
 				1551A6EE158F2ADE00E66CFE /* CCProgressTimer.h in Headers */,
 				1551A6F0158F2ADE00E66CFE /* CCRenderTexture.h in Headers */,
@@ -1435,6 +1467,7 @@
 				469A7DFA16C247C8006FFCB2 /* tinyxml2.h in Headers */,
 				1AB7FB3F16D0D31800D35305 /* CCDevice.h in Headers */,
 				1A78B70716DEED020038FAD0 /* ccUTF8.h in Headers */,
+				546BE75B1ACDD96D00ED87FF /* CCKeyboardHandler.h in Headers */,
 				46A3939B16E03F4D00210B16 /* ccFPSImages.h in Headers */,
 				1A589DA416EC7B2F00C6B691 /* CCUserDefault.h in Headers */,
 				1A60BF5C173CD9D90054773B /* CCBool.h in Headers */,
@@ -1502,6 +1535,7 @@
 				1551A62A158F2ADE00E66CFE /* CCActionCamera.cpp in Sources */,
 				1551A62C158F2ADE00E66CFE /* CCActionCatmullRom.cpp in Sources */,
 				1551A62E158F2ADE00E66CFE /* CCActionEase.cpp in Sources */,
+				546BE7551ACDD96D00ED87FF /* CCKeyboard.cpp in Sources */,
 				1551A630158F2ADE00E66CFE /* CCActionGrid.cpp in Sources */,
 				1551A632158F2ADE00E66CFE /* CCActionGrid3D.cpp in Sources */,
 				1551A634158F2ADE00E66CFE /* CCActionInstant.cpp in Sources */,
@@ -1540,6 +1574,7 @@
 				1551A6CD158F2ADE00E66CFE /* quaternion.c in Sources */,
 				1551A6CE158F2ADE00E66CFE /* ray2.c in Sources */,
 				1551A6CF158F2ADE00E66CFE /* utility.c in Sources */,
+				546BE7581ACDD96D00ED87FF /* CCKeyboardDispatcher.cpp in Sources */,
 				1551A6D0158F2ADE00E66CFE /* vec2.c in Sources */,
 				1551A6D1158F2ADE00E66CFE /* vec3.c in Sources */,
 				1551A6D2158F2ADE00E66CFE /* vec4.c in Sources */,
@@ -1615,6 +1650,7 @@
 				152DCD8E165614AB009B8D87 /* CCDrawingPrimitives.cpp in Sources */,
 				152DCD90165614AB009B8D87 /* CCDrawNode.cpp in Sources */,
 				15C647EF165F2B77007D4F18 /* CCClippingNode.cpp in Sources */,
+				546BE75A1ACDD96D00ED87FF /* CCKeyboardHandler.cpp in Sources */,
 				1A950DFA16BB6651003F4508 /* CCFileUtilsMac.mm in Sources */,
 				1A950DFC16BB6661003F4508 /* CCFileUtils.cpp in Sources */,
 				1A94D34916C2001000D79D09 /* CCImageCommonWebp.cpp in Sources */,
