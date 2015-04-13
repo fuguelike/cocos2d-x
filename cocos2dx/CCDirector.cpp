@@ -376,6 +376,9 @@ void CCDirector::setOpenGLView(CCEGLView *pobOpenGLView)
 
         m_pobOpenGLView->setTouchDelegate(m_pTouchDispatcher);
         m_pTouchDispatcher->setDispatchEvents(true);
+        
+        m_pobOpenGLView->setKeyboardDelegate(m_pKeyboardDispatcher);
+        m_pKeyboardDispatcher->setDispatchEvents(true);
     }
 }
 
