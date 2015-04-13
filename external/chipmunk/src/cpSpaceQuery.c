@@ -108,7 +108,7 @@ static void
 NearestPointQueryNearest(struct NearestPointQueryContext *context, cpShape *shape, cpNearestPointQueryInfo *out)
 {
 	if(
-		!(shape->group && context->group == shape->group) && (context->layers&shape->layers) && !shape->sensor
+		!(shape->group && context->group == shape->group) && (context->layers&shape->layers) //&& !shape->sensor
 	){
 		cpNearestPointQueryInfo info;
 		cpShapeNearestPointQuery(shape, context->point, &info);
