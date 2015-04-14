@@ -222,7 +222,7 @@ unsigned int CCArray::indexOfObject(CCObject* object) const
 
 CCObject* CCArray::objectAtIndex(unsigned int index)
 {
-    CCAssert(index < data->num, "index out of range in objectAtIndex()");
+//    CCAssert(index < data->num, "index out of range in objectAtIndex()");
 
     return data->arr[index];
 }
