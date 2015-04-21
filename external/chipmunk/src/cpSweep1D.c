@@ -1,4 +1,4 @@
-/* Copyright (c) 2010 Scott Lembcke
+/* Copyright (c) 2013 Scott Lembcke and Howling Moon Software
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -19,7 +19,7 @@
  * SOFTWARE.
  */
 
-#include "chipmunk_private.h"
+#include "chipmunk/chipmunk_private.h"
 
 static inline cpSpatialIndexClass *Klass();
 
@@ -183,7 +183,7 @@ cpSweep1DQuery(cpSweep1D *sweep, void *obj, cpBB bb, cpSpatialIndexQueryFunc fun
 	TableCell *table = sweep->table;
 	for(int i=0, count=sweep->num; i<count; i++){
 		TableCell cell = table[i];
-		if(BoundsOverlap(bounds, cell.bounds) && obj != cell.obj) func(obj, cell.obj, data);
+		if(BoundsOverlap(bounds, cell.bounds) && obj != cell.obj) func(obj, cell.obj, 0, data);
 	}
 }
 
@@ -216,14 +216,14 @@ cpSweep1DReindexQuery(cpSweep1D *sweep, cpSpatialIndexQueryFunc func, void *data
 	
 	// Update bounds and sort
 	for(int i=0; i<count; i++) table[i] = MakeTableCell(sweep, table[i].obj);
-	qsort(table, count, sizeof(TableCell), (int (*)(const void *, const void *))TableSort); // TODO use insertion sort instead
+	qsort(table, count, sizeof(TableCell), (int (*)(const void *, const void *))TableSort); // TODO: use insertion sort instead
 	
 	for(int i=0; i<count; i++){
 		TableCell cell = table[i];
 		cpFloat max = cell.bounds.max;
 		
 		for(int j=i+1; table[j].bounds.min < max && j<count; j++){
-			func(cell.obj, table[j].obj, data);
+			func(cell.obj, table[j].obj, 0, data);
 		}
 	}
 	

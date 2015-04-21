@@ -19,50 +19,27 @@
  * SOFTWARE.
  */
 
-// Used for resizing hash tables.
-// Values approximately double.
-// http://planetmath.org/encyclopedia/GoodHashTablePrimes.html
-static int primes[] = {
-	5,
-	13,
-	23,
-	47,
-	97,
-	193,
-	389,
-	769,
-	1543,
-	3079,
-	6151,
-	12289,
-	24593,
-	49157,
-	98317,
-	196613,
-	393241,
-	786433,
-	1572869,
-	3145739,
-	6291469,
-	12582917,
-	25165843,
-	50331653,
-	100663319,
-	201326611,
-	402653189,
-	805306457,
-	1610612741,
-	0,
-};
+/// @defgroup cpGearJoint cpGearJoint
+/// @{
 
-static inline int
-next_prime(int n)
-{
-	int i = 0;
-	while(n > primes[i]){
-		i++;
-		cpAssertHard(primes[i], "Tried to resize a hash table to a size greater than 1610612741 O_o"); // realistically this should never happen
-	}
-	
-	return primes[i];
-}
+/// Check if a constraint is a damped rotary springs.
+cpBool cpConstraintIsGearJoint(const cpConstraint *constraint);
+
+/// Allocate a gear joint.
+cpGearJoint* cpGearJointAlloc(void);
+/// Initialize a gear joint.
+cpGearJoint* cpGearJointInit(cpGearJoint *joint, cpBody *a, cpBody *b, cpFloat phase, cpFloat ratio);
+/// Allocate and initialize a gear joint.
+cpConstraint* cpGearJointNew(cpBody *a, cpBody *b, cpFloat phase, cpFloat ratio);
+
+/// Get the phase offset of the gears.
+cpFloat cpGearJointGetPhase(const cpConstraint *constraint);
+/// Set the phase offset of the gears.
+void cpGearJointSetPhase(cpConstraint *constraint, cpFloat phase);
+
+/// Get the angular distance of each ratchet.
+cpFloat cpGearJointGetRatio(const cpConstraint *constraint);
+/// Set the ratio of a gear joint.
+void cpGearJointSetRatio(cpConstraint *constraint, cpFloat ratio);
+
+/// @}
