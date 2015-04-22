@@ -58,9 +58,6 @@ kazmath/src/GL/mat4stack.c \
 kazmath/src/GL/matrix.c \
 keypad_dispatcher/CCKeypadDelegate.cpp \
 keypad_dispatcher/CCKeypadDispatcher.cpp \
-keyboard_dispatcher/CCKeyboardDispatcher.cpp \
-keyboard_dispatcher/CCKeyboard.cpp \
-keyboard_dispatcher/CCKeyboardHandler.cpp \
 label_nodes/CCLabelAtlas.cpp \
 label_nodes/CCLabelBMFont.cpp \
 label_nodes/CCLabelTTF.cpp \
