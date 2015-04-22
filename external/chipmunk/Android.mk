@@ -24,7 +24,6 @@ src/cpSimpleMotor.c \
 src/cpSlideJoint.c \
 src/cpArbiter.c \
 src/cpArray.c \
-src/cpBB.c \
 src/cpBBTree.c \
 src/cpBody.c \
 src/cpCollision.c \
@@ -38,15 +37,14 @@ src/cpSpaceQuery.c \
 src/cpSpaceStep.c \
 src/cpSpatialIndex.c \
 src/cpSweep1D.c \
-src/cpVect.c \
 src/cpHastySpace.c \
 src/cpMarch.c \
 src/cpPolyline.c \
 src/cpSpaceDebug.c \
 
-LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/include/chipmunk
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/include
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/include/chipmunk
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 LOCAL_CFLAGS := -std=c99
                                  
 include $(BUILD_STATIC_LIBRARY)
