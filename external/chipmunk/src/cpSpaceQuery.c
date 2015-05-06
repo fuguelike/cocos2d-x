@@ -61,7 +61,7 @@ static cpCollisionID
 NearestPointQueryNearest(struct PointQueryContext *context, cpShape *shape, cpCollisionID id, cpPointQueryInfo *out)
 {
 	if(
-		!cpShapeFilterReject(shape->filter, context->filter) && !shape->sensor
+		!cpShapeFilterReject(shape->filter, context->filter)// && !shape->sensor
 	){
 		cpPointQueryInfo info;
 		cpShapePointQuery(shape, context->point, &info);
