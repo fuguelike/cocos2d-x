@@ -6,8 +6,7 @@ LOCAL_MODULE := chipmunk_static
 
 LOCAL_MODULE_FILENAME := libchipmunk
 
-LOCAL_CFLAGS := -std=gnu99 -DCP_USE_DOUBLES=0 -DCP_ALLOW_PRIVATE_ACCESS=1 -DANDROID
-LOCAL_EXPORT_CFLAGS := -DCP_USE_DOUBLES=0 -DCP_ALLOW_PRIVATE_ACCESS=1
+LOCAL_CFLAGS := -std=c99
 
 LOCAL_SRC_FILES := \
 src/chipmunk.c \
@@ -45,6 +44,5 @@ src/cpSpaceDebug.c \
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/include
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
-LOCAL_CFLAGS := -std=gnu99
                                  
 include $(BUILD_STATIC_LIBRARY)
