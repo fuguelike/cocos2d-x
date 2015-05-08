@@ -1,4 +1,4 @@
-/* Copyright (c) 2009 Scott Lembcke
+/* Copyright (c) 2013 Scott Lembcke and Howling Moon Software
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@
 #include "stdlib.h"
 #include "stdio.h"
 
-#include "chipmunk_private.h"
+#include "chipmunk/chipmunk_private.h"
 
 static inline cpSpatialIndexClass *Klass();
 
@@ -72,7 +72,10 @@ typedef struct Thread {
 	Pair *next;
 } Thread;
 
-struct Pair { Thread a, b; };
+struct Pair {
+	Thread a, b;
+	cpCollisionID id;
+};
 
 //MARK: Misc Functions
 
@@ -129,7 +132,7 @@ static void
 PairRecycle(cpBBTree *tree, Pair *pair)
 {
 	// Share the pool of the master tree.
-	// TODO would be lovely to move the pairs stuff into an external data structure.
+	// TODO: would be lovely to move the pairs stuff into an external data structure.
 	tree = GetMasterTree(tree);
 	
 	pair->a.next = tree->pooledPairs;
@@ -140,7 +143,7 @@ static Pair *
 PairFromPool(cpBBTree *tree)
 {
 	// Share the pool of the master tree.
-	// TODO would be lovely to move the pairs stuff into an external data structure.
+	// TODO: would be lovely to move the pairs stuff into an external data structure.
 	tree = GetMasterTree(tree);
 	
 	Pair *pair = tree->pooledPairs;
@@ -205,7 +208,7 @@ PairInsert(Node *a, Node *b, cpBBTree *tree)
 {
 	Pair *nextA = a->PAIRS, *nextB = b->PAIRS;
 	Pair *pair = PairFromPool(tree);
-	Pair temp = {{NULL, a, nextA},{NULL, b, nextB}};
+	Pair temp = {{NULL, a, nextA},{NULL, b, nextB}, 0};
 	
 	a->PAIRS = b->PAIRS = pair;
 	*pair = temp;
@@ -351,7 +354,7 @@ SubtreeQuery(Node *subtree, void *obj, cpBB bb, cpSpatialIndexQueryFunc func, vo
 {
 	if(cpBBIntersects(subtree->bb, bb)){
 		if(NodeIsLeaf(subtree)){
-			func(obj, subtree->obj, data);
+			func(obj, subtree->obj, 0, data);
 		} else {
 			SubtreeQuery(subtree->A, obj, bb, func, data);
 			SubtreeQuery(subtree->B, obj, bb, func, data);
@@ -428,7 +431,7 @@ MarkLeafQuery(Node *subtree, Node *leaf, cpBool left, MarkContext *context)
 				PairInsert(leaf, subtree, context->tree);
 			} else {
 				if(subtree->STAMP < leaf->STAMP) PairInsert(subtree, leaf, context->tree);
-				context->func(leaf->obj, subtree->obj, context->data);
+				context->func(leaf->obj, subtree->obj, 0, context->data);
 			}
 		} else {
 			MarkLeafQuery(subtree->A, leaf, left, context);
@@ -456,7 +459,7 @@ MarkLeaf(Node *leaf, MarkContext *context)
 		Pair *pair = leaf->PAIRS;
 		while(pair){
 			if(leaf == pair->b.leaf){
-				context->func(pair->a.leaf->obj, leaf->obj, context->data);
+				pair->id = context->func(pair->a.leaf->obj, leaf->obj, pair->id, context->data);
 				pair = pair->b.next;
 			} else {
 				pair = pair->a.next;
@@ -472,7 +475,7 @@ MarkSubtree(Node *subtree, MarkContext *context)
 		MarkLeaf(subtree, context);
 	} else {
 		MarkSubtree(subtree->A, context);
-		MarkSubtree(subtree->B, context);
+		MarkSubtree(subtree->B, context); // TODO: Force TCO here?
 	}
 }
 
@@ -508,12 +511,12 @@ LeafUpdate(Node *leaf, cpBBTree *tree)
 		leaf->STAMP = GetMasterTree(tree)->stamp;
 		
 		return cpTrue;
+	} else {
+		return cpFalse;
 	}
-	
-	return cpFalse;
 }
 
-static void VoidQueryFunc(void *obj1, void *obj2, void *data){}
+static cpCollisionID VoidQueryFunc(void *obj1, void *obj2, cpCollisionID id, void *data){return id;}
 
 static void
 LeafAddPairs(Node *leaf, cpBBTree *tree)
@@ -602,7 +605,7 @@ cpBBTreeDestroy(cpBBTree *tree)
 static void
 cpBBTreeInsert(cpBBTree *tree, void *obj, cpHashValue hashid)
 {
-	Node *leaf = (Node *)cpHashSetInsert(tree->leaves, hashid, obj, tree, (cpHashSetTransFunc)leafSetTrans);
+	Node *leaf = (Node *)cpHashSetInsert(tree->leaves, hashid, obj, (cpHashSetTransFunc)leafSetTrans, tree);
 	
 	Node *root = tree->root;
 	tree->root = SubtreeInsert(root, leaf, tree);
@@ -630,13 +633,15 @@ cpBBTreeContains(cpBBTree *tree, void *obj, cpHashValue hashid)
 
 //MARK: Reindex
 
+static void LeafUpdateWrap(Node *leaf, cpBBTree *tree) {LeafUpdate(leaf, tree);}
+
 static void
 cpBBTreeReindexQuery(cpBBTree *tree, cpSpatialIndexQueryFunc func, void *data)
 {
 	if(!tree->root) return;
 	
 	// LeafUpdate() may modify tree->root. Don't cache it.
-	cpHashSetEach(tree->leaves, (cpHashSetIteratorFunc)LeafUpdate, tree);
+	cpHashSetEach(tree->leaves, (cpHashSetIteratorFunc)LeafUpdateWrap, tree);
 	
 	cpSpatialIndex *staticIndex = tree->spatialIndex.staticIndex;
 	Node *staticRoot = (staticIndex && staticIndex->klass == Klass() ? ((cpBBTree *)staticIndex)->root : NULL);
