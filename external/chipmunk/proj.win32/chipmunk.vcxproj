@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\chipmunk.c" />
+    <ClCompile Include="..\src\cpArbiter.c" />
+    <ClCompile Include="..\src\cpArray.c" />
+    <ClCompile Include="..\src\cpBBTree.c" />
+    <ClCompile Include="..\src\cpBody.c" />
+    <ClCompile Include="..\src\cpCollision.c" />
+    <ClCompile Include="..\src\cpConstraint.c" />
+    <ClCompile Include="..\src\cpDampedRotarySpring.c" />
+    <ClCompile Include="..\src\cpDampedSpring.c" />
+    <ClCompile Include="..\src\cpGearJoint.c" />
+    <ClCompile Include="..\src\cpGrooveJoint.c" />
+    <ClCompile Include="..\src\cpHashSet.c" />
+    <ClCompile Include="..\src\cpHastySpace.c" />
+    <ClCompile Include="..\src\cpMarch.c" />
+    <ClCompile Include="..\src\cpPinJoint.c" />
+    <ClCompile Include="..\src\cpPivotJoint.c" />
+    <ClCompile Include="..\src\cpPolyline.c" />
+    <ClCompile Include="..\src\cpPolyShape.c" />
+    <ClCompile Include="..\src\cpRatchetJoint.c" />
+    <ClCompile Include="..\src\cpRotaryLimitJoint.c" />
+    <ClCompile Include="..\src\cpShape.c" />
+    <ClCompile Include="..\src\cpSimpleMotor.c" />
+    <ClCompile Include="..\src\cpSlideJoint.c" />
+    <ClCompile Include="..\src\cpSpace.c" />
+    <ClCompile Include="..\src\cpSpaceComponent.c" />
+    <ClCompile Include="..\src\cpSpaceDebug.c" />
+    <ClCompile Include="..\src\cpSpaceHash.c" />
+    <ClCompile Include="..\src\cpSpaceQuery.c" />
+    <ClCompile Include="..\src\cpSpaceStep.c" />
+    <ClCompile Include="..\src\cpSpatialIndex.c" />
+    <ClCompile Include="..\src\cpSweep1D.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\chipmunk\chipmunk.h" />
+    <ClInclude Include="..\include\chipmunk\chipmunk_ffi.h" />
+    <ClInclude Include="..\include\chipmunk\chipmunk_private.h" />
+    <ClInclude Include="..\include\chipmunk\chipmunk_types.h" />
+    <ClInclude Include="..\include\chipmunk\chipmunk_unsafe.h" />
+    <ClInclude Include="..\include\chipmunk\cpArbiter.h" />
+    <ClInclude Include="..\include\chipmunk\cpBB.h" />
+    <ClInclude Include="..\include\chipmunk\cpBody.h" />
+    <ClInclude Include="..\include\chipmunk\cpConstraint.h" />
+    <ClInclude Include="..\include\chipmunk\cpDampedRotarySpring.h" />
+    <ClInclude Include="..\include\chipmunk\cpDampedSpring.h" />
+    <ClInclude Include="..\include\chipmunk\cpGearJoint.h" />
+    <ClInclude Include="..\include\chipmunk\cpGrooveJoint.h" />
+    <ClInclude Include="..\include\chipmunk\cpHastySpace.h" />
+    <ClInclude Include="..\include\chipmunk\cpMarch.h" />
+    <ClInclude Include="..\include\chipmunk\cpPinJoint.h" />
+    <ClInclude Include="..\include\chipmunk\cpPivotJoint.h" />
+    <ClInclude Include="..\include\chipmunk\cpPolyline.h" />
+    <ClInclude Include="..\include\chipmunk\cpPolyShape.h" />
+    <ClInclude Include="..\include\chipmunk\cpRatchetJoint.h" />
+    <ClInclude Include="..\include\chipmunk\cpRotaryLimitJoint.h" />
+    <ClInclude Include="..\include\chipmunk\cpShape.h" />
+    <ClInclude Include="..\include\chipmunk\cpSimpleMotor.h" />
+    <ClInclude Include="..\include\chipmunk\cpSlideJoint.h" />
+    <ClInclude Include="..\include\chipmunk\cpSpace.h" />
+    <ClInclude Include="..\include\chipmunk\cpSpatialIndex.h" />
+    <ClInclude Include="..\include\chipmunk\cpTransform.h" />
+    <ClInclude Include="..\include\chipmunk\cpVect.h" />
+    <ClInclude Include="..\src\prime.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1ACE86E-5A14-490A-9678-104BA2546723}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>chipmunk</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;..\include;Z:\libs\cocos2d-x\cocos2dx\platform\third_party\win32\pthread;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4068;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;..\include;Z:\libs\cocos2d-x\cocos2dx\platform\third_party\win32\pthread;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4068;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
