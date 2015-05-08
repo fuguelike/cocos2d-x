@@ -79,6 +79,11 @@ public:
     virtual void setViewPortInPoints(float x , float y , float w , float h);
     virtual void setScissorInPoints(float x , float y , float w , float h);
     
+    bool enterFullscreen(int fullscreenWidth=0, int fullscreenHeight=0);
+    bool exitFullscreen(int windowX, int windowY, int windowedWidth, int windowedHeight, int windowedPaddingX, int windowedPaddingY);
+    int getFullscreenWidth();
+    int getFullscreenHeight();
+
     // static function
     /**
     @brief    get the shared main open gl window
