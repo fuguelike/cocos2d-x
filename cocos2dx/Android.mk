@@ -170,8 +170,8 @@ LOCAL_WHOLE_STATIC_LIBRARIES += cocos_libtiff_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos_libwebp_static
 
 # define the macro to compile through support/zip_support/ioapi.c
-LOCAL_CFLAGS := -Wno-psabi -DUSE_FILE32API
-LOCAL_EXPORT_CFLAGS := -Wno-psabi -DUSE_FILE32API
+LOCAL_CFLAGS := -Wno-psabi -DUSE_FILE32API -Ofast -DNDEBUG
+LOCAL_EXPORT_CFLAGS := -Wno-psabi -DUSE_FILE32API -Ofast -DNDEBUG
 
 include $(BUILD_STATIC_LIBRARY)
 

@@ -6,7 +6,7 @@ LOCAL_MODULE := chipmunk_static
 
 LOCAL_MODULE_FILENAME := libchipmunk
 
-LOCAL_CFLAGS := -std=c99
+LOCAL_CFLAGS := -std=c99 -ffast-math -Ofast -DNDEBUG
 
 LOCAL_SRC_FILES := \
 src/chipmunk.c \
