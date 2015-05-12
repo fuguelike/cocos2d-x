@@ -73,6 +73,7 @@ class CCActionManager;
 class CCTouchDispatcher;
 class CCKeypadDispatcher;
 class CCAccelerometer;
+class CCKeyboardDispatcher;
 
 /**
 @brief Class that creates and handle the main Window and manages how
@@ -184,7 +185,11 @@ public:
      */
     CCDirectorDelegate* getDelegate() const;
     void setDelegate(CCDirectorDelegate* pDelegate);
-
+    
+    
+    CCPoint getMousePosition();
+    void setMousePosition(float xPos, float yPos);
+    
     // window size
 
     /** returns the size of the OpenGL view in points.
@@ -345,7 +350,9 @@ public:
      @since v2.0
      */
     CC_PROPERTY(CCKeypadDispatcher*, m_pKeypadDispatcher, KeypadDispatcher);
-
+    
+    CC_PROPERTY(CCKeyboardDispatcher*, m_pKeyboardDispatcher, KeyboardDispatcher);
+    
     /** CCAccelerometer associated with this director
      @since v2.0
      @js NA
@@ -426,6 +433,9 @@ protected:
 
     /* window size in points */
     CCSize    m_obWinSizeInPoints;
+    
+    /* mouse position size in points */
+    CCPoint    m_mousePosition;
     
     /* content scale factor */
     float    m_fContentScaleFactor;

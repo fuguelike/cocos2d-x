@@ -85,6 +85,8 @@ public:
     
     const std::string& getStartupScriptFilename(void);
     
+    void openURL(const char* pszUrl);
+    
 protected:
     static CCApplication * sm_pSharedApplication;
     

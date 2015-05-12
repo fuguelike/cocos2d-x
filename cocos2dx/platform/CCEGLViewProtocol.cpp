@@ -1,6 +1,8 @@
 #include "CCEGLViewProtocol.h"
 #include "touch_dispatcher/CCTouchDispatcher.h"
 #include "touch_dispatcher/CCTouch.h"
+#include "keyboard_dispatcher/CCKeyboard.h"
+#include "keyboard_dispatcher/CCKeyboardDispatcher.h"
 #include "CCDirector.h"
 #include "cocoa/CCSet.h"
 #include "cocoa/CCDictionary.h"
@@ -11,6 +13,7 @@ NS_CC_BEGIN
 static CCTouch* s_pTouches[CC_MAX_TOUCHES] = { NULL };
 static unsigned int s_indexBitsUsed = 0;
 static CCDictionary s_TouchesIntergerDict;
+static CCKeyboard* s_Keyboard;
 
 static int getUnUsedIndex()
 {
@@ -44,15 +47,17 @@ static void removeUsedIndexBit(int index)
 
 CCEGLViewProtocol::CCEGLViewProtocol()
 : m_pDelegate(NULL)
+, m_pKeyboardDelegate(NULL)
 , m_fScaleX(1.0f)
 , m_fScaleY(1.0f)
 , m_eResolutionPolicy(kResolutionUnKnown)
 {
+    s_Keyboard = new CCKeyboard();
 }
 
 CCEGLViewProtocol::~CCEGLViewProtocol()
 {
-
+    if (s_Keyboard != NULL) delete s_Keyboard;
 }
 
 void CCEGLViewProtocol::setDesignResolutionSize(float width, float height, ResolutionPolicy resolutionPolicy)
@@ -146,6 +151,29 @@ CCPoint CCEGLViewProtocol::getVisibleOrigin() const
 void CCEGLViewProtocol::setTouchDelegate(EGLTouchDelegate * pDelegate)
 {
     m_pDelegate = pDelegate;
+}
+
+void CCEGLViewProtocol::setKeyboardDelegate(EGLKeyboardDelegate * pDelegate)
+{
+    m_pKeyboardDelegate = pDelegate;
+}
+
+void CCEGLViewProtocol::keyUp(unsigned int keyCode, const char* charSequence, unsigned int modifiers, bool shiftKeyPressed, bool controlKeyPressed, bool altKeyPressed, bool commandKeyPressed)
+{
+    s_Keyboard->setKeyboardInfo(keyCode, charSequence, modifiers, shiftKeyPressed, controlKeyPressed, altKeyPressed, commandKeyPressed);
+    m_pKeyboardDelegate->keyUp(s_Keyboard);
+}
+
+void CCEGLViewProtocol::keyDown(unsigned int keyCode, const char* charSequence, unsigned int modifiers, bool shiftKeyPressed, bool controlKeyPressed, bool altKeyPressed, bool commandKeyPressed)
+{
+    s_Keyboard->setKeyboardInfo(keyCode, charSequence, modifiers, shiftKeyPressed, controlKeyPressed, altKeyPressed, commandKeyPressed);
+    m_pKeyboardDelegate->keyDown(s_Keyboard);
+}
+
+void CCEGLViewProtocol::flagsChanged(unsigned int keyCode, unsigned int modifiers, bool shiftKeyPressed, bool controlKeyPressed, bool altKeyPressed, bool commandKeyPressed)
+{
+    s_Keyboard->setKeyboardInfo(keyCode, 0, modifiers, shiftKeyPressed, controlKeyPressed, altKeyPressed, commandKeyPressed);
+    m_pKeyboardDelegate->flagsChanged(s_Keyboard);
 }
 
 void CCEGLViewProtocol::setViewPortInPoints(float x , float y , float w , float h)

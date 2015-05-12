@@ -33,6 +33,7 @@ NS_CC_BEGIN
 #define CC_MAX_TOUCHES  5
 
 class EGLTouchDelegate;
+class EGLKeyboardDelegate;
 class CCSet;
 
 /**
@@ -112,7 +113,10 @@ public:
 
     /** Set touch delegate */
     virtual void setTouchDelegate(EGLTouchDelegate * pDelegate);
-
+    
+    /** Set keyboard delegate */
+    virtual void setKeyboardDelegate(EGLKeyboardDelegate * pDelegate);
+    
     /**
      * Set opengl view port rectangle with points.
      */
@@ -159,7 +163,14 @@ public:
      * @lua NA
      */
     virtual void handleTouchesCancel(int num, int ids[], float xs[], float ys[]);
-
+    
+    virtual void keyUp(unsigned int keyCode, const char* charSequence, unsigned int modifiers, bool shiftKeyPressed, bool controlKeyPressed, bool altKeyPressed, bool commandKeyPressed);
+    virtual void keyDown(unsigned int keyCode, const char* charSequence, unsigned int modifiers, bool shiftKeyPressed, bool controlKeyPressed, bool altKeyPressed, bool commandKeyPressed);
+    /**
+     The flagsChanged: method can be useful for detecting the pressing of modifier keys without any other key being pressed simultaneously. For example, if the user presses the Option key by itself, your responder object can detect this in its implementation of flagsChanged:.
+     */
+    virtual void flagsChanged(unsigned int keyCode, unsigned int modifiers, bool shiftKeyPressed, bool controlKeyPressed, bool altKeyPressed, bool commandKeyPressed);
+    
     /**
      * Get the opengl view port rectangle.
      */
@@ -179,6 +190,7 @@ private:
 
 protected:
     EGLTouchDelegate* m_pDelegate;
+    EGLKeyboardDelegate* m_pKeyboardDelegate;
 
     // real screen size
     CCSize m_obScreenSize;

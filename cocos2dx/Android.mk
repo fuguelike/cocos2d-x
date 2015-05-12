@@ -58,6 +58,9 @@ kazmath/src/GL/mat4stack.c \
 kazmath/src/GL/matrix.c \
 keypad_dispatcher/CCKeypadDelegate.cpp \
 keypad_dispatcher/CCKeypadDispatcher.cpp \
+keyboard_dispatcher/CCKeyboardDispatcher.cpp \
+keyboard_dispatcher/CCKeyboard.cpp \
+keyboard_dispatcher/CCKeyboardHandler.cpp \
 label_nodes/CCLabelAtlas.cpp \
 label_nodes/CCLabelBMFont.cpp \
 label_nodes/CCLabelTTF.cpp \
@@ -167,8 +170,8 @@ LOCAL_WHOLE_STATIC_LIBRARIES += cocos_libtiff_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos_libwebp_static
 
 # define the macro to compile through support/zip_support/ioapi.c
-LOCAL_CFLAGS := -Wno-psabi -DUSE_FILE32API
-LOCAL_EXPORT_CFLAGS := -Wno-psabi -DUSE_FILE32API
+LOCAL_CFLAGS := -Wno-psabi -DUSE_FILE32API -Ofast -DNDEBUG
+LOCAL_EXPORT_CFLAGS := -Wno-psabi -DUSE_FILE32API -Ofast -DNDEBUG
 
 include $(BUILD_STATIC_LIBRARY)
 

@@ -186,6 +186,9 @@ xcopy /Y /Q "$(ProjectDir)..\platform\third_party\win32\libraries\*.*" "$(OutDir
     <ClCompile Include="..\label_nodes\CCLabelAtlas.cpp" />
     <ClCompile Include="..\label_nodes\CCLabelBMFont.cpp" />
     <ClCompile Include="..\label_nodes\CCLabelTTF.cpp" />
+    <ClCompile Include="..\keyboard_dispatcher\CCKeyboard.cpp" />
+    <ClCompile Include="..\keyboard_dispatcher\CCKeyboardDispatcher.cpp" />
+    <ClCompile Include="..\keyboard_dispatcher\CCKeyboardHandler.cpp" />
     <ClCompile Include="..\layers_scenes_transitions_nodes\CCLayer.cpp" />
     <ClCompile Include="..\layers_scenes_transitions_nodes\CCScene.cpp" />
     <ClCompile Include="..\layers_scenes_transitions_nodes\CCTransition.cpp" />
@@ -258,6 +261,10 @@ xcopy /Y /Q "$(ProjectDir)..\platform\third_party\win32\libraries\*.*" "$(OutDir
     <ClCompile Include="..\touch_dispatcher\CCTouchHandler.cpp" />
     <ClCompile Include="..\keypad_dispatcher\CCKeypadDelegate.cpp" />
     <ClCompile Include="..\keypad_dispatcher\CCKeypadDispatcher.cpp" />
+    <ClInclude Include="..\keyboard_dispatcher\CCKeyboard.h" />
+    <ClInclude Include="..\keyboard_dispatcher\CCKeyboardDelegate.h" />
+    <ClInclude Include="..\keyboard_dispatcher\CCKeyboardDispatcher.h" />
+    <ClInclude Include="..\keyboard_dispatcher\CCKeyboardHandler.h" />
     <ClCompile Include="..\text_input_node\CCIMEDispatcher.cpp" />
     <ClCompile Include="..\text_input_node\CCTextFieldTTF.cpp" />
     <ClCompile Include="..\script_support\CCScriptSupport.cpp" />
