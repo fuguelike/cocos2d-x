@@ -58,6 +58,8 @@ samples/Cpp/TestCpp/proj.nacl/out/
 samples/Cpp/SimpleGame/proj.nacl/Resources/
 samples/Lua/HelloLua/proj.nacl/Resources/
 samples/Lua/TestLua/proj.nacl/Resources/
+v2-deps-4.zip
+v2.2.6-universal.zip
 *.pyc
 build_*_xcode/
 build_*_vc10/
