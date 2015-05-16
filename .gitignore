@@ -37,6 +37,7 @@ bin/
 obj/
 gen/
 assets/
+projects/
 local.properties
 cocos2dx/platform/third_party/winrt/freetype/src
 cocos2dx/platform/third_party/winrt/libpng/lpng142

@@ -172,10 +172,10 @@
       <Filter>libcocos2d\kazmath\include\kazmath\GL</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDelegate.h">
-      <Filter>libcocos2d\keyboard_dispatcher</Filter>
+      <Filter>libcocos2d\keypad_dispatcher</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDispatcher.h">
-      <Filter>libcocos2d\keyboard_dispatcher</Filter>
+      <Filter>libcocos2d\keypad_dispatcher</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelAtlas.h">
       <Filter>libcocos2d\label_nodes</Filter>
@@ -666,6 +666,18 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\Keyboard-winrt.h">
       <Filter>libcocos2d\platform\win-8.1</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboard.h">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDelegate.h">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDispatcher.h">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardHandler.h">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
@@ -804,10 +816,10 @@
       <Filter>libcocos2d\kazmath\src\GL</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDelegate.cpp">
-      <Filter>libcocos2d\keyboard_dispatcher</Filter>
+      <Filter>libcocos2d\keypad_dispatcher</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDispatcher.cpp">
-      <Filter>libcocos2d\keyboard_dispatcher</Filter>
+      <Filter>libcocos2d\keypad_dispatcher</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelAtlas.cpp">
       <Filter>libcocos2d\label_nodes</Filter>
@@ -1220,6 +1232,15 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\Keyboard-winrt.cpp">
       <Filter>libcocos2d\platform\win-8.1</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboard.cpp">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDispatcher.cpp">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardHandler.cpp">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="libcocos2d">
@@ -1261,7 +1282,7 @@
     <Filter Include="libcocos2d\kazmath\src\GL">
       <UniqueIdentifier>{bd9fa580-c0ae-400b-b4fd-9051c8301775}</UniqueIdentifier>
     </Filter>
-    <Filter Include="libcocos2d\keyboard_dispatcher">
+    <Filter Include="libcocos2d\keypad_dispatcher">
       <UniqueIdentifier>{d1ebbc66-b370-422d-b6a6-27ec9ef3e2a0}</UniqueIdentifier>
     </Filter>
     <Filter Include="libcocos2d\label_nodes">
@@ -1356,6 +1377,9 @@
     </Filter>
     <Filter Include="libcocos2d\platform\win-8.1">
       <UniqueIdentifier>{91161373-a4e1-477c-976b-b5b5340e4c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="keyboard_dispatcher">
+      <UniqueIdentifier>{3817cdb6-4358-4437-a4c6-f177e4bcc11c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -137,6 +137,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec2.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec3.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboard.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDispatcher.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardHandler.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDelegate.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDispatcher.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelAtlas.h" />
@@ -422,6 +426,9 @@
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboard.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDispatcher.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardHandler.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDelegate.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDispatcher.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelAtlas.cpp" />
