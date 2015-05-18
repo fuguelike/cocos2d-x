@@ -79,6 +79,7 @@ public:
         return m_startupScriptFilename;
     }
 
+	void openURL(const char* pszUrl);
 protected:
     LARGE_INTEGER       m_nAnimationInterval;
     std::string         m_resourceRootPath;

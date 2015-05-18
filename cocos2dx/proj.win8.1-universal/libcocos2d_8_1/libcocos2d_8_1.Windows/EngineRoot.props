@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <EngineRoot>$(MSBuildThisFileDirectory)..\..\..\..\</EngineRoot>
+    <EngineRoot>$(MSBuildThisFileDirectory)..\..\..\..\..\..\libs\cocos2d-x\</EngineRoot>
     <Cocos2dPlatform>winrt-8.1</Cocos2dPlatform>
   </PropertyGroup>
   <ItemGroup>
