@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{a6d2cbf8-a702-4523-9b0a-bd4ba129d8d6}</ItemsProjectGuid>
+    <ItemsRootNamespace>libcocos2d_8_1</ItemsRootNamespace>
+    <ItemsProjectName>libcocos2d_8_1.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\include\Export.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\include\SimpleAudioEngine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\Audio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\MediaStreamer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\AssetsManager\AssetsManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBAnimationManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBFileLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBKeyframe.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBMemberVariableAssigner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSelectorResolver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSequence.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSequenceProperty.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBValue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCControlButtonLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCControlLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLabelBMFontLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLabelTTFLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerColorLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerGradientLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuItemImageLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuItemLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNode+CCBRelativePositioning.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoaderLibrary.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoaderListener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCParticleSystemQuadLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCScale9SpriteLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCScrollViewLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCSpriteLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\cocos-ext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\ExtensionExport.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\ExtensionMacros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlColourPicker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlExtensions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlHuePicker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlPotentiometer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSlider.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlStepper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSwitch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlUtils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCInvocation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCScale9Sprite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBoxImpl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBoxImplWinrt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\UIEditBoxImpl-winrt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCScrollView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCSorting.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCTableView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCTableViewCell.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\HttpClient.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\HttpRequest.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\HttpResponse.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\WebSocket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\WebSocketWinRT.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionCamera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionCatmullRom.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionEase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionGrid.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionGrid3D.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionInstant.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionInterval.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionPageTurn3D.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionProgressTimer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionTiledGrid.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionTween.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCAtlasNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCGLBufferedNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCCamera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCConfiguration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDirector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ccFPSImages.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCScheduler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCAffineTransform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCArray.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCAutoreleasePool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCBool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDataVisitor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDictionary.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDouble.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCFloat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCGeometry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCInteger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCNS.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCSet.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCString.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCZone.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\draw_nodes\CCDrawingPrimitives.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\draw_nodes\CCDrawNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\effects\CCGrabber.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\effects\CCGrid.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\ccConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\CCEventType.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\ccMacros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\CCProtocols.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\ccTypeInfo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\ccTypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\cocos2d.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\aabb.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\GL\mat4stack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\GL\matrix.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\kazmath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\mat3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\mat4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\neon_matrix_impl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\plane.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\quaternion.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\ray2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\utility.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboard.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDispatcher.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardHandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDispatcher.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelAtlas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelBMFont.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelTTF.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCLayer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransition.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransitionPageTurn.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransitionProgress.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\menu_nodes\CCMenu.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\menu_nodes\CCMenuItem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCClippingNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCMotionStreak.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCProgressTimer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCRenderTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleBatchNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleExamples.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleSystem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleSystemQuad.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\firePngData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCAccelerometerDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCApplicationProtocol.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCCommon.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCEGLViewProtocol.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCFileUtils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCImage.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCImageCommon_cpp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCPlatformConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCPlatformMacros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCSAXParser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCThread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\platform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\CCEGLView-Win8_1.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\InputEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\InputEventTypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\Keyboard-winrt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCAccelerometer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCFileUtilsWinRT.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCFreeTypeFont.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCGL.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCGL_Angle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPlatformDefine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPrecompiledShaders.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPThreadWinRT.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCStdC.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCWinRTUtils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\sha1.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\script_support\CCScriptSupport.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\shaders\CCGLProgram.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\shaders\ccGLStateCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\shaders\CCShaderCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\shaders\ccShaders.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCAnimation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCAnimationCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSprite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteBatchNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteFrame.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteFrameCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\base64.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\CCNotificationCenter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\CCPointExtension.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\CCProfiling.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\ccUTF8.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\ccUtils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\CCVertex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\component\CCComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\component\CCComponentContainer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\data_support\ccCArray.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\data_support\uthash.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\data_support\utlist.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\image_support\TGAlib.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\TransformUtils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\user_default\CCUserDefault.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\ioapi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\unzip.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\ZipUtils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTexture2D.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureAtlas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureETC.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTexturePVR.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCIMEDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCIMEDispatcher.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCTextFieldTTF.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCParallaxNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTileMapAtlas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXLayer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXObjectGroup.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXTiledMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXXMLParser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchDelegateProtocol.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchDispatcher.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchHandler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\Audio.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\MediaStreamer.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\SimpleAudioEngine.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\AssetsManager\AssetsManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBAnimationManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBFileLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBKeyframe.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSequence.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSequenceProperty.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBValue.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCControlButtonLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCControlLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCData.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLabelBMFontLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLabelTTFLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerColorLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerGradientLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuItemImageLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuItemLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNode+CCBRelativePositioning.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoaderLibrary.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCParticleSystemQuadLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCScale9SpriteLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCScrollViewLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCSpriteLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControl.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlButton.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlColourPicker.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlHuePicker.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlPotentiometer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSlider.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlStepper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSwitch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCInvocation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCScale9Sprite.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBoxImplWinrt.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\UIEditBoxImpl-winrt.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCScrollView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCSorting.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCTableView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCTableViewCell.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\HttpClient.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\WebSocketWinRT.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionCamera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionCatmullRom.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionEase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionGrid.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionGrid3D.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionInstant.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionInterval.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionManager.cpp">
+      <ObjectFileName>$(IntDir)\actions\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionPageTurn3D.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionProgressTimer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionTiledGrid.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionTween.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCAtlasNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCGLBufferedNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCCamera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCConfiguration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDirector.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ccFPSImages.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCScheduler.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCAffineTransform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCArray.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCAutoreleasePool.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDataVisitor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDictionary.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCGeometry.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCNS.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCSet.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCString.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCZone.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocos2d.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\draw_nodes\CCDrawingPrimitives.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\draw_nodes\CCDrawNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\effects\CCGrabber.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\effects\CCGrid.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\aabb.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\GL\mat4stack.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\GL\matrix.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\mat3.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\mat4.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\neon_matrix_impl.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\plane.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\quaternion.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\ray2.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\utility.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\vec2.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\vec3.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\vec4.c">
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboard.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDispatcher.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardHandler.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDelegate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDispatcher.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelAtlas.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelBMFont.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelTTF.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCLayer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransition.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransitionPageTurn.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransitionProgress.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\menu_nodes\CCMenu.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\menu_nodes\CCMenuItem.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCClippingNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCMotionStreak.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCProgressTimer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCRenderTexture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleBatchNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleExamples.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleSystem.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleSystemQuad.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCEGLViewProtocol.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCFileUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCSAXParser.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCThread.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\platform.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\CCEGLView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\InputEvent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\Keyboard-winrt.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCAccelerometer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCApplication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCCommon.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCDevice.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCFileUtilsWinRT.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCFreeTypeFont.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCImage.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPrecompiledShaders.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPThreadWinRT.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCStdC.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCWinRTUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\sha1.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\script_support\CCScriptSupport.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\shaders\CCGLProgram.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\shaders\ccGLStateCache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\shaders\CCShaderCache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\shaders\ccShaders.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCAnimation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCAnimationCache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSprite.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteBatchNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteFrame.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteFrameCache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\base64.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\CCNotificationCenter.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\CCPointExtension.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\CCProfiling.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\ccUTF8.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\ccUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\CCVertex.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\component\CCComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\component\CCComponentContainer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\data_support\ccCArray.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\image_support\TGAlib.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\TransformUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\user_default\CCUserDefault.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\ioapi.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\unzip.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\ZipUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTexture2D.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureAtlas.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureCache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureETC.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTexturePVR.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCIMEDispatcher.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCTextFieldTTF.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCParallaxNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTileMapAtlas.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXLayer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXObjectGroup.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXTiledMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXXMLParser.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchDispatcher.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchHandler.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+</Project>

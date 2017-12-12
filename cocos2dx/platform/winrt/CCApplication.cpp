@@ -239,6 +239,16 @@ void CCApplication::setStartupScriptFilename(const std::string& startupScriptFil
     std::replace(m_startupScriptFilename.begin(), m_startupScriptFilename.end(), '\\', '/');
 }
 
+void CCApplication::openURL(const char* pszUrl)
+{
+	//std::string url = pszUrl;
+
+	//auto uri = ref new Windows::Foundation::Uri(pszUrl);
+	//Windows::System::Launcher::LaunchUriAsync(uri);
+	
+	//ShellExecuteA(NULL, "open", pszUrl, NULL, NULL, SW_SHOWNORMAL);
+}
+
 NS_CC_END
 
 

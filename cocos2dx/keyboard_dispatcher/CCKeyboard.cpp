@@ -39,7 +39,7 @@ void CCKeyboard::setKeyboardInfo(unsigned int keyCode, const char* charSequence,
 
 unsigned int CCKeyboard::getKey()
 {
-#ifdef CC_TARGET_PLATFORM == CC_PLATFORM_WIN32
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WIN32
     if(m_unKeyCode == 27) return 53;
     if(m_unKeyCode == 38) return 126;
     if(m_unKeyCode == 87) return 13;

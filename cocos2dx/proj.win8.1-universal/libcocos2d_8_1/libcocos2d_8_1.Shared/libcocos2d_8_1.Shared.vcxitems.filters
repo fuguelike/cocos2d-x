@@ -1,0 +1,1385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCAction.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionCamera.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionCatmullRom.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionEase.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionGrid.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionGrid3D.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionInstant.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionInterval.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionManager.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionPageTurn3D.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionProgressTimer.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionTiledGrid.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionTween.h">
+      <Filter>libcocos2d\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCAtlasNode.h">
+      <Filter>libcocos2d\base_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCGLBufferedNode.h">
+      <Filter>libcocos2d\base_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCNode.h">
+      <Filter>libcocos2d\base_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCAffineTransform.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCArray.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCAutoreleasePool.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCBool.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDataVisitor.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDictionary.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDouble.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCFloat.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCGeometry.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCInteger.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCNS.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCObject.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCSet.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCString.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCZone.h">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\draw_nodes\CCDrawingPrimitives.h">
+      <Filter>libcocos2d\draw_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\draw_nodes\CCDrawNode.h">
+      <Filter>libcocos2d\draw_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\effects\CCGrabber.h">
+      <Filter>libcocos2d\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\effects\CCGrid.h">
+      <Filter>libcocos2d\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\ccConfig.h">
+      <Filter>libcocos2d\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\CCEventType.h">
+      <Filter>libcocos2d\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\ccMacros.h">
+      <Filter>libcocos2d\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\CCProtocols.h">
+      <Filter>libcocos2d\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\ccTypeInfo.h">
+      <Filter>libcocos2d\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\ccTypes.h">
+      <Filter>libcocos2d\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\cocos2d.h">
+      <Filter>libcocos2d\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\aabb.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\kazmath.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\mat3.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\mat4.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\neon_matrix_impl.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\plane.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\quaternion.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\ray2.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\utility.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec2.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec3.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\vec4.h">
+      <Filter>libcocos2d\kazmath\include\kazmath</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\GL\mat4stack.h">
+      <Filter>libcocos2d\kazmath\include\kazmath\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\include\kazmath\GL\matrix.h">
+      <Filter>libcocos2d\kazmath\include\kazmath\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDelegate.h">
+      <Filter>libcocos2d\keypad_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDispatcher.h">
+      <Filter>libcocos2d\keypad_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelAtlas.h">
+      <Filter>libcocos2d\label_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelBMFont.h">
+      <Filter>libcocos2d\label_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelTTF.h">
+      <Filter>libcocos2d\label_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCLayer.h">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCScene.h">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransition.h">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransitionPageTurn.h">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransitionProgress.h">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\menu_nodes\CCMenu.h">
+      <Filter>libcocos2d\menu_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\menu_nodes\CCMenuItem.h">
+      <Filter>libcocos2d\menu_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCClippingNode.h">
+      <Filter>libcocos2d\misc_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCMotionStreak.h">
+      <Filter>libcocos2d\misc_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCProgressTimer.h">
+      <Filter>libcocos2d\misc_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCRenderTexture.h">
+      <Filter>libcocos2d\misc_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouch.h">
+      <Filter>libcocos2d\touch_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchDelegateProtocol.h">
+      <Filter>libcocos2d\touch_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchDispatcher.h">
+      <Filter>libcocos2d\touch_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchHandler.h">
+      <Filter>libcocos2d\touch_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCParallaxNode.h">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTileMapAtlas.h">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXLayer.h">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXObjectGroup.h">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXTiledMap.h">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXXMLParser.h">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTexture2D.h">
+      <Filter>libcocos2d\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureAtlas.h">
+      <Filter>libcocos2d\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureCache.h">
+      <Filter>libcocos2d\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureETC.h">
+      <Filter>libcocos2d\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTexturePVR.h">
+      <Filter>libcocos2d\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCIMEDelegate.h">
+      <Filter>libcocos2d\text_input_node</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCIMEDispatcher.h">
+      <Filter>libcocos2d\text_input_node</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCTextFieldTTF.h">
+      <Filter>libcocos2d\text_input_node</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\base64.h">
+      <Filter>libcocos2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\CCNotificationCenter.h">
+      <Filter>libcocos2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\CCPointExtension.h">
+      <Filter>libcocos2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\CCProfiling.h">
+      <Filter>libcocos2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\ccUTF8.h">
+      <Filter>libcocos2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\ccUtils.h">
+      <Filter>libcocos2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\CCVertex.h">
+      <Filter>libcocos2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\TransformUtils.h">
+      <Filter>libcocos2d\support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\component\CCComponent.h">
+      <Filter>libcocos2d\support\component</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\component\CCComponentContainer.h">
+      <Filter>libcocos2d\support\component</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\data_support\ccCArray.h">
+      <Filter>libcocos2d\support\data_support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\data_support\uthash.h">
+      <Filter>libcocos2d\support\data_support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\data_support\utlist.h">
+      <Filter>libcocos2d\support\data_support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\image_support\TGAlib.h">
+      <Filter>libcocos2d\support\image_support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\ioapi.h">
+      <Filter>libcocos2d\support\zip_support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\unzip.h">
+      <Filter>libcocos2d\support\zip_support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\ZipUtils.h">
+      <Filter>libcocos2d\support\zip_support</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\user_default\CCUserDefault.h">
+      <Filter>libcocos2d\support\user_default</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\support\tinyxml2\tinyxml2.h">
+      <Filter>libcocos2d\support\tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCAnimation.h">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCAnimationCache.h">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSprite.h">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteBatchNode.h">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteFrame.h">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteFrameCache.h">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\shaders\CCGLProgram.h">
+      <Filter>libcocos2d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\shaders\ccGLStateCache.h">
+      <Filter>libcocos2d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\shaders\CCShaderCache.h">
+      <Filter>libcocos2d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\shaders\ccShaders.h">
+      <Filter>libcocos2d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\script_support\CCScriptSupport.h">
+      <Filter>libcocos2d\script_suppport</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleBatchNode.h">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleExamples.h">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleSystem.h">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleSystemQuad.h">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\firePngData.h">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCCamera.h">
+      <Filter>libcocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCConfiguration.h">
+      <Filter>libcocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDirector.h">
+      <Filter>libcocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ccFPSImages.h">
+      <Filter>libcocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCScheduler.h">
+      <Filter>libcocos2d</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\cocos-ext.h">
+      <Filter>libExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\ExtensionExport.h">
+      <Filter>libExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\ExtensionMacros.h">
+      <Filter>libExtensions</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\AssetsManager\AssetsManager.h">
+      <Filter>libExtensions\AssetsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBAnimationManager.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBFileLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBKeyframe.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBMemberVariableAssigner.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBReader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSelectorResolver.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSequence.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSequenceProperty.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBValue.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCControlButtonLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCControlLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCData.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLabelBMFontLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLabelTTFLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerColorLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerGradientLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuItemImageLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuItemLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNode+CCBRelativePositioning.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoaderLibrary.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoaderListener.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCParticleSystemQuadLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCScale9SpriteLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCScrollViewLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCSpriteLoader.h">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControl.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlButton.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlColourPicker.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlExtensions.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlHuePicker.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlPotentiometer.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSlider.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlStepper.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSwitch.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlUtils.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCInvocation.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCScale9Sprite.h">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBox.h">
+      <Filter>libExtensions\GUI\CCEditBox</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBoxImpl.h">
+      <Filter>libExtensions\GUI\CCEditBox</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBoxImplWinrt.h">
+      <Filter>libExtensions\GUI\CCEditBox</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCScrollView.h">
+      <Filter>libExtensions\GUI\CCScrollView</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCSorting.h">
+      <Filter>libExtensions\GUI\CCScrollView</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCTableView.h">
+      <Filter>libExtensions\GUI\CCScrollView</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCTableViewCell.h">
+      <Filter>libExtensions\GUI\CCScrollView</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\HttpClient.h">
+      <Filter>libExtensions\network</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\HttpRequest.h">
+      <Filter>libExtensions\network</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\HttpResponse.h">
+      <Filter>libExtensions\network</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\WebSocket.h">
+      <Filter>libExtensions\network</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\WebSocketWinRT.h">
+      <Filter>libExtensions\network</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCStdC.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCAccelerometerDelegate.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCApplicationProtocol.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCCommon.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCDevice.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCEGLViewProtocol.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCFileUtils.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCImage.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCImageCommon_cpp.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCPlatformConfig.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCPlatformMacros.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCSAXParser.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCThread.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\platform.h">
+      <Filter>libcocos2d\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCAccelerometer.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCApplication.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCFileUtilsWinRT.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCFreeTypeFont.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCGL.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCGL_Angle.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPlatformDefine.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPThreadWinRT.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCWinRTUtils.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPrecompiledShaders.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\sha1.h">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\Audio.h">
+      <Filter>CocosDenshion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\MediaStreamer.h">
+      <Filter>CocosDenshion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\include\Export.h">
+      <Filter>CocosDenshion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\include\SimpleAudioEngine.h">
+      <Filter>CocosDenshion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\CCEGLView-Win8_1.h">
+      <Filter>libcocos2d\platform\win-8.1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\InputEvent.h">
+      <Filter>libcocos2d\platform\win-8.1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\InputEventTypes.h">
+      <Filter>libcocos2d\platform\win-8.1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\UIEditBoxImpl-winrt.h">
+      <Filter>libExtensions\GUI\CCEditBox</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\Keyboard-winrt.h">
+      <Filter>libcocos2d\platform\win-8.1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboard.h">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDelegate.h">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDispatcher.h">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardHandler.h">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCAction.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionCamera.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionCatmullRom.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionEase.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionGrid.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionGrid3D.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionInstant.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionInterval.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionManager.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionPageTurn3D.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionProgressTimer.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionTiledGrid.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\actions\CCActionTween.cpp">
+      <Filter>libcocos2d\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCAtlasNode.cpp">
+      <Filter>libcocos2d\base_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCGLBufferedNode.cpp">
+      <Filter>libcocos2d\base_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\base_nodes\CCNode.cpp">
+      <Filter>libcocos2d\base_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCAffineTransform.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCArray.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCAutoreleasePool.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDataVisitor.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCDictionary.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCGeometry.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCNS.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCObject.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCSet.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCString.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocoa\CCZone.cpp">
+      <Filter>libcocos2d\cocoa</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\draw_nodes\CCDrawingPrimitives.cpp">
+      <Filter>libcocos2d\draw_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\draw_nodes\CCDrawNode.cpp">
+      <Filter>libcocos2d\draw_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\effects\CCGrabber.cpp">
+      <Filter>libcocos2d\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\effects\CCGrid.cpp">
+      <Filter>libcocos2d\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\aabb.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\mat3.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\mat4.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\neon_matrix_impl.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\plane.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\quaternion.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\ray2.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\utility.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\vec2.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\vec3.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\vec4.c">
+      <Filter>libcocos2d\kazmath\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\GL\mat4stack.c">
+      <Filter>libcocos2d\kazmath\src\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\kazmath\src\GL\matrix.c">
+      <Filter>libcocos2d\kazmath\src\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDelegate.cpp">
+      <Filter>libcocos2d\keypad_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keypad_dispatcher\CCKeypadDispatcher.cpp">
+      <Filter>libcocos2d\keypad_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelAtlas.cpp">
+      <Filter>libcocos2d\label_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelBMFont.cpp">
+      <Filter>libcocos2d\label_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\label_nodes\CCLabelTTF.cpp">
+      <Filter>libcocos2d\label_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCLayer.cpp">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCScene.cpp">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransition.cpp">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransitionPageTurn.cpp">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\layers_scenes_transitions_nodes\CCTransitionProgress.cpp">
+      <Filter>libcocos2d\layers_scenes_transitions_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\menu_nodes\CCMenu.cpp">
+      <Filter>libcocos2d\menu_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\menu_nodes\CCMenuItem.cpp">
+      <Filter>libcocos2d\menu_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCClippingNode.cpp">
+      <Filter>libcocos2d\misc_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCMotionStreak.cpp">
+      <Filter>libcocos2d\misc_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCProgressTimer.cpp">
+      <Filter>libcocos2d\misc_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\misc_nodes\CCRenderTexture.cpp">
+      <Filter>libcocos2d\misc_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouch.cpp">
+      <Filter>libcocos2d\touch_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchDispatcher.cpp">
+      <Filter>libcocos2d\touch_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\touch_dispatcher\CCTouchHandler.cpp">
+      <Filter>libcocos2d\touch_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCParallaxNode.cpp">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTileMapAtlas.cpp">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXLayer.cpp">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXObjectGroup.cpp">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXTiledMap.cpp">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\tilemap_parallax_nodes\CCTMXXMLParser.cpp">
+      <Filter>libcocos2d\tilemap_parrallax_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTexture2D.cpp">
+      <Filter>libcocos2d\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureAtlas.cpp">
+      <Filter>libcocos2d\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureCache.cpp">
+      <Filter>libcocos2d\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTextureETC.cpp">
+      <Filter>libcocos2d\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\textures\CCTexturePVR.cpp">
+      <Filter>libcocos2d\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCIMEDispatcher.cpp">
+      <Filter>libcocos2d\text_input_node</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\text_input_node\CCTextFieldTTF.cpp">
+      <Filter>libcocos2d\text_input_node</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\base64.cpp">
+      <Filter>libcocos2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\CCNotificationCenter.cpp">
+      <Filter>libcocos2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\CCPointExtension.cpp">
+      <Filter>libcocos2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\CCProfiling.cpp">
+      <Filter>libcocos2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\ccUTF8.cpp">
+      <Filter>libcocos2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\ccUtils.cpp">
+      <Filter>libcocos2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\CCVertex.cpp">
+      <Filter>libcocos2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\TransformUtils.cpp">
+      <Filter>libcocos2d\support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\component\CCComponent.cpp">
+      <Filter>libcocos2d\support\component</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\component\CCComponentContainer.cpp">
+      <Filter>libcocos2d\support\component</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\data_support\ccCArray.cpp">
+      <Filter>libcocos2d\support\data_support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\image_support\TGAlib.cpp">
+      <Filter>libcocos2d\support\image_support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\ioapi.cpp">
+      <Filter>libcocos2d\support\zip_support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\unzip.cpp">
+      <Filter>libcocos2d\support\zip_support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\zip_support\ZipUtils.cpp">
+      <Filter>libcocos2d\support\zip_support</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\user_default\CCUserDefault.cpp">
+      <Filter>libcocos2d\support\user_default</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\support\tinyxml2\tinyxml2.cpp">
+      <Filter>libcocos2d\support\tinyxml2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCAnimation.cpp">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCAnimationCache.cpp">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSprite.cpp">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteBatchNode.cpp">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteFrame.cpp">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\sprite_nodes\CCSpriteFrameCache.cpp">
+      <Filter>libcocos2d\sprite_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\shaders\CCGLProgram.cpp">
+      <Filter>libcocos2d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\shaders\ccGLStateCache.cpp">
+      <Filter>libcocos2d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\shaders\CCShaderCache.cpp">
+      <Filter>libcocos2d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\shaders\ccShaders.cpp">
+      <Filter>libcocos2d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\script_support\CCScriptSupport.cpp">
+      <Filter>libcocos2d\script_suppport</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleBatchNode.cpp">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleExamples.cpp">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleSystem.cpp">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\particle_nodes\CCParticleSystemQuad.cpp">
+      <Filter>libcocos2d\particle_nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCCamera.cpp">
+      <Filter>libcocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCConfiguration.cpp">
+      <Filter>libcocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDirector.cpp">
+      <Filter>libcocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ccFPSImages.c">
+      <Filter>libcocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCScheduler.cpp">
+      <Filter>libcocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\cocos2d.cpp">
+      <Filter>libcocos2d</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\AssetsManager\AssetsManager.cpp">
+      <Filter>libExtensions\AssetsManager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBAnimationManager.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBFileLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBKeyframe.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBReader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSequence.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBSequenceProperty.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCBValue.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCControlButtonLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCControlLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCData.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLabelBMFontLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLabelTTFLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerColorLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerGradientLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCLayerLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuItemImageLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCMenuItemLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNode+CCBRelativePositioning.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCNodeLoaderLibrary.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCParticleSystemQuadLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCScale9SpriteLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCScrollViewLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\CCBReader\CCSpriteLoader.cpp">
+      <Filter>libExtensions\CCBReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControl.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlButton.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlColourPicker.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlHuePicker.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlPotentiometer.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSlider.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlStepper.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlSwitch.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCControlUtils.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCInvocation.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCControlExtension\CCScale9Sprite.cpp">
+      <Filter>libExtensions\GUI\CCControlExtension</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBox.cpp">
+      <Filter>libExtensions\GUI\CCEditBox</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\CCEditBoxImplWinrt.cpp">
+      <Filter>libExtensions\GUI\CCEditBox</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCScrollView.cpp">
+      <Filter>libExtensions\GUI\CCScrollView</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCSorting.cpp">
+      <Filter>libExtensions\GUI\CCScrollView</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCTableView.cpp">
+      <Filter>libExtensions\GUI\CCScrollView</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCScrollView\CCTableViewCell.cpp">
+      <Filter>libExtensions\GUI\CCScrollView</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\HttpClient.cpp">
+      <Filter>libExtensions\network</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\network\WebSocketWinRT.cpp">
+      <Filter>libExtensions\network</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCStdC.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCEGLViewProtocol.cpp">
+      <Filter>libcocos2d\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCFileUtils.cpp">
+      <Filter>libcocos2d\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCSAXParser.cpp">
+      <Filter>libcocos2d\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\CCThread.cpp">
+      <Filter>libcocos2d\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\platform.cpp">
+      <Filter>libcocos2d\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCAccelerometer.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCApplication.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCCommon.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCDevice.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCFileUtilsWinRT.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCFreeTypeFont.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCImage.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPThreadWinRT.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCWinRTUtils.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\CCPrecompiledShaders.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\winrt\sha1.cpp">
+      <Filter>libcocos2d\platform\winrt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\Audio.cpp">
+      <Filter>CocosDenshion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\MediaStreamer.cpp">
+      <Filter>CocosDenshion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\CocosDenshion\win-8.1\SimpleAudioEngine.cpp">
+      <Filter>CocosDenshion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\CCEGLView.cpp">
+      <Filter>libcocos2d\platform\win-8.1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\InputEvent.cpp">
+      <Filter>libcocos2d\platform\win-8.1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\extensions\GUI\CCEditBox\UIEditBoxImpl-winrt.cpp">
+      <Filter>libExtensions\GUI\CCEditBox</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\platform\win-8.1\Keyboard-winrt.cpp">
+      <Filter>libcocos2d\platform\win-8.1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboard.cpp">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardDispatcher.cpp">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\keyboard_dispatcher\CCKeyboardHandler.cpp">
+      <Filter>keyboard_dispatcher</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="libcocos2d">
+      <UniqueIdentifier>{3cde07cf-cf90-425a-a638-02bfb8993141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\actions">
+      <UniqueIdentifier>{18c4473e-6572-496c-8be8-76b7522c5b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\base_nodes">
+      <UniqueIdentifier>{91b0107b-42bb-4150-a118-e9c6efe8dd00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\cocoa">
+      <UniqueIdentifier>{3d4bc415-7985-4951-90cf-7048d192c36d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\draw_nodes">
+      <UniqueIdentifier>{013b76f6-2e02-4c8d-ba8f-9cc93d6b6c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\effects">
+      <UniqueIdentifier>{1bdb2b3f-41f4-41da-ad33-0782ec98d3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\include">
+      <UniqueIdentifier>{8cd3cb5b-2d71-4ca9-9505-98575f1e3e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\kazmath">
+      <UniqueIdentifier>{c6383ec7-19ea-4e5e-b923-12cd748112df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\kazmath\include">
+      <UniqueIdentifier>{66d012f2-9ff6-45ec-ba31-687b58a86ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\kazmath\src">
+      <UniqueIdentifier>{773824c3-cf11-475b-8f1b-f3f9a7065417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\kazmath\include\kazmath">
+      <UniqueIdentifier>{254c5549-da4b-4ff4-98c4-ce98a59072b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\kazmath\include\kazmath\GL">
+      <UniqueIdentifier>{5fcf229b-6ba0-44bf-a260-e3caef7f36b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\kazmath\src\GL">
+      <UniqueIdentifier>{bd9fa580-c0ae-400b-b4fd-9051c8301775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\keypad_dispatcher">
+      <UniqueIdentifier>{d1ebbc66-b370-422d-b6a6-27ec9ef3e2a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\label_nodes">
+      <UniqueIdentifier>{ae180cf5-b944-45eb-ace0-e477f6250c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\layers_scenes_transitions_nodes">
+      <UniqueIdentifier>{d6dfc68b-c1ff-46eb-aed7-f6713d625832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\menu_nodes">
+      <UniqueIdentifier>{02b3c233-9b0b-472b-a8ba-ce8b69cda944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\misc_nodes">
+      <UniqueIdentifier>{7f004dd1-8661-43d9-9144-fc0e6ef0fc11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\particle_nodes">
+      <UniqueIdentifier>{4ddb82a5-bc96-4208-9dd3-8e3b05783559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\platform">
+      <UniqueIdentifier>{6534b9f2-c3f7-41b2-a6a1-362deb60fea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\script_suppport">
+      <UniqueIdentifier>{e076e9a0-70e9-4f0e-9ef0-291c853587b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\shaders">
+      <UniqueIdentifier>{21bc42e0-28be-4e61-9c50-dd33291556f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\sprite_nodes">
+      <UniqueIdentifier>{bab01f69-33bf-4178-ad91-e54ee4cade38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\support">
+      <UniqueIdentifier>{c4d40cc0-989d-49c5-b718-22d486947bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\text_input_node">
+      <UniqueIdentifier>{0fee529e-d851-444b-be41-db7881b41f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\textures">
+      <UniqueIdentifier>{cfd3d70c-7712-4f23-82de-637bd0d649a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\tilemap_parrallax_nodes">
+      <UniqueIdentifier>{a6114f7d-0f1b-4b1f-871c-4e2a074f928e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\touch_dispatcher">
+      <UniqueIdentifier>{b8b1c9ea-7017-4d0b-bb96-91033f507b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\support\component">
+      <UniqueIdentifier>{15cfa23b-4b6e-4333-afb7-56ba62280f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\support\data_support">
+      <UniqueIdentifier>{2c6ab107-2f9d-4749-be12-b9f3d60ffc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\support\image_support">
+      <UniqueIdentifier>{d009d318-c553-488e-a0b1-60db37783dd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\support\tinyxml2">
+      <UniqueIdentifier>{7cbaad3a-5536-42a3-8de1-4a9ddd85c174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\support\user_default">
+      <UniqueIdentifier>{32a62a48-f6bf-4508-9045-92398f84a070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\support\zip_support">
+      <UniqueIdentifier>{cf84e3a4-5a0a-4069-8978-ac174ae5ecb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libExtensions">
+      <UniqueIdentifier>{2b8ae5b5-4741-4d63-b4ce-35cc00b620d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libExtensions\AssetsManager">
+      <UniqueIdentifier>{d487b741-58f5-4f56-af11-058523511552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libExtensions\CCBReader">
+      <UniqueIdentifier>{7956a5fa-e8b4-43ef-a056-87eda97073d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libExtensions\GUI">
+      <UniqueIdentifier>{457e4a33-b38c-49b6-9c81-8326be1e7e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libExtensions\network">
+      <UniqueIdentifier>{69293d56-6ef8-4e4c-a4a4-2c2a7a9635bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libExtensions\GUI\CCControlExtension">
+      <UniqueIdentifier>{5aba6f78-afca-4c2a-9b3c-aaa75eb22c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libExtensions\GUI\CCEditBox">
+      <UniqueIdentifier>{1109ba04-34f7-4bfc-a07a-cc91aafe33d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libExtensions\GUI\CCScrollView">
+      <UniqueIdentifier>{94cfd4b7-6097-4828-94a2-76c6936140f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocosDenshion">
+      <UniqueIdentifier>{b6dba837-57c9-4e6d-a012-a1330fd04f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\platform\winrt">
+      <UniqueIdentifier>{1b915b26-ae6c-4f4d-9f7b-794a0c39d44a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcocos2d\platform\win-8.1">
+      <UniqueIdentifier>{91161373-a4e1-477c-976b-b5b5340e4c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="keyboard_dispatcher">
+      <UniqueIdentifier>{3817cdb6-4358-4437-a4c6-f177e4bcc11c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
