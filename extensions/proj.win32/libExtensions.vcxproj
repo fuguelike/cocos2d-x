@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -80,7 +80,7 @@
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;libzlib.lib;libpng.lib;libcurl_imp.lib;libjpeg.lib;libtiff.lib;libwebp.lib;libiconv.lib;pthreadVCE2.lib;libcocos2d.lib;chipmunk.lib;libCocosDenshion.lib;websockets.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;ws2_32.lib;libzlib.lib;libpng.lib;libcurl_imp.lib;libjpeg.lib;libtiff.lib;libwebp.lib;libiconv.lib;pthreadVCE2.lib;libcocos2d.lib;chipmunk.lib;libCocosDenshion.lib;websockets.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
